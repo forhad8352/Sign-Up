@@ -48,6 +48,7 @@ function App() {
             set(ref(db, "users/" + user.user.uid), {
               username: fullname,
               email: email,
+              password: password,
             });
           })
           .catch((error) => {
